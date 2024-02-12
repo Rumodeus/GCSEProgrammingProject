@@ -1,7 +1,9 @@
 # GCSEProgrammingProject
 
-love computer science class\n
-kill me\n
+love computer science class
 
-took me about 2h\n
+kill me
+
+took me about 2h
+
 did not take 20h sorry mr p
