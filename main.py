@@ -57,7 +57,7 @@ def randompick():
   for i in range(0, len(SongArtist[0])):
     #If its the first letter, or a new word, it adds the first letter of the word
     if LetterCount == 0 or CensoredSongName[i-1] == " ":
-      CensoredSongName += str((SongArtist[0])[i])
+      CensoredSongName += (SongArtist[0])[i]
       LetterCount += 1
       continue
     #If its a special, keep it a special
