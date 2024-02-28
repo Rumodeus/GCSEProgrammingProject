@@ -31,9 +31,9 @@ def randompick():
   SongArtist = "X"
   num = 0
   
-  #Choosing a random song, we know that there are only 46 songs anyways
-  choice = random.randint(0, 46)
-  #Set to 175 for SongListExtend
+  #This is required so that a random song is picked. I don't include this in the file handling operation below this as it would not be truly random, with a bias to the first few songs.
+  with open("SongList.csv", "r") as SongList:
+    choice = random.randint(0, len(SongList.readlines()))
   
   #Using a context handler makes life easier, like I don't have to manually close the file
   #Open SongListExtend.csv for extra songs
